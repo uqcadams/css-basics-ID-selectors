@@ -1,7 +1,11 @@
 
 /* Type selectors */
+html {
+  font-size: 16px;
+}
 h1 {
-  font-size:  90px;
+  font-size:  4rem;
+  margin-bottom: 1.5rem;
 }
 
 p {
@@ -9,11 +13,20 @@ p {
   font-size: 26px;
 }
 header {
-  background-color: orange;
+  background-color: #f60; /* this is the same as ##ff600 */
+  width: 80%;
+  margin-left: 10%;
 }
 header p {
   background-color: snow;
   border-bottom: 1px solid gray;
+}
+#header-box {
+  width: 50%;
+  background-color: #33d549;
+}
+img {
+  width: 100%;
 }
 footer {
   background-color: lightcoral;
@@ -32,8 +45,8 @@ a:hover {
 
 /* turns links white with an orange background when they receive focus */
 a:focus {
-  color: white;
-  background-color: orange;
+  color: rgb(255, 255, 255);
+  background-color: rgba( 255, 165, 0, 0.5); /* 0.5 means 50% opacity */
 }
 ol li {
   letter-spacing: 3px;
@@ -41,9 +54,9 @@ ol li {
 }
 
 /* styles the first li element in an ol */
-ol li:first-child {
+/* ol li:first-child {
   font-weight: bold;
-}
+} */
 /* Note that you can select any child with :nth-child() */
 
 
@@ -61,6 +74,7 @@ ul li {
 #education h3 {
   font-family: Arial, sans-serif;
   font-size: 32px;
+  background-color: rgba( 150, 200, 250, 1);
 }
 #skills-list { 
   background-color: aliceblue;
